@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    tools:context=".MainActivity">
+
+    <!--to show the game title-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="cursive"
+        android:textStyle="bold|italic"
+        android:textColor="@color/black"
+        android:text="Spin the Bottle"
+        android:textSize="44sp" />
+
+    <!--image of the bottle with
+        an onClick function-->
+    <ImageView
+        android:id="@+id/bottle"
+        android:layout_width="400dp"
+        android:layout_height="450dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:onClick="spinBottle"
+        android:src="@drawable/bottle" />
+
+</RelativeLayout>
